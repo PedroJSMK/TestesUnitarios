@@ -2,7 +2,7 @@
 //  TestesUnitariosUITestsLaunchTests.swift
 //  TestesUnitariosUITests
 //
-//  Created by Pedro Kanagusto on 13/02/22.
+//  Created by PJSMK on 13/02/22.
 //
 
 import XCTest
