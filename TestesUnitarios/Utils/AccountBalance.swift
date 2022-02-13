@@ -10,7 +10,7 @@ import UIKit
 struct AccountBalance {
     
     let balance: Double
-
+    
     func getSpecialLimit() -> Double {
         if balance < 100 {
             return balance + 10

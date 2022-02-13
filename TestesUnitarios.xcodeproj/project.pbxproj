@@ -27,6 +27,9 @@
 		236F95EA27B9960A00D952DE /* StringUtilsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 236F95E927B9960A00D952DE /* StringUtilsTests.swift */; };
 		236F96CF27B9B0CF00D952DE /* BeforeEachAfterEach.swift in Sources */ = {isa = PBXBuildFile; fileRef = 236F96CE27B9B0CF00D952DE /* BeforeEachAfterEach.swift */; };
 		236F96D127B9B0EE00D952DE /* AccountViewModelSpecs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 236F96D027B9B0EE00D952DE /* AccountViewModelSpecs.swift */; };
+		236F96D327B9B2AA00D952DE /* AccountViewModelMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 236F96D227B9B2AA00D952DE /* AccountViewModelMock.swift */; };
+		236F96D527B9B2F300D952DE /* AsyncProcessSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 236F96D427B9B2F300D952DE /* AsyncProcessSpec.swift */; };
+		236F96D727B9B30E00D952DE /* ProviderMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 236F96D627B9B30E00D952DE /* ProviderMock.swift */; };
 		6FB3B0440E32EF8F8C77C7C8 /* Pods_TestesUnitarios.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F84FA7861ABE876AAA0722C9 /* Pods_TestesUnitarios.framework */; };
 		CAB42BF06262D263EB2B1647 /* Pods_TestesUnitariosTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 039D1A9AC6F476565941C326 /* Pods_TestesUnitariosTests.framework */; };
 /* End PBXBuildFile section */
@@ -76,6 +79,9 @@
 		236F95E927B9960A00D952DE /* StringUtilsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringUtilsTests.swift; sourceTree = "<group>"; };
 		236F96CE27B9B0CF00D952DE /* BeforeEachAfterEach.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeforeEachAfterEach.swift; sourceTree = "<group>"; };
 		236F96D027B9B0EE00D952DE /* AccountViewModelSpecs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewModelSpecs.swift; sourceTree = "<group>"; };
+		236F96D227B9B2AA00D952DE /* AccountViewModelMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewModelMock.swift; sourceTree = "<group>"; };
+		236F96D427B9B2F300D952DE /* AsyncProcessSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncProcessSpec.swift; sourceTree = "<group>"; };
+		236F96D627B9B30E00D952DE /* ProviderMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProviderMock.swift; sourceTree = "<group>"; };
 		60733B2E8D685FA4F7A44B09 /* Pods-TestesUnitarios.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestesUnitarios.debug.xcconfig"; path = "Target Support Files/Pods-TestesUnitarios/Pods-TestesUnitarios.debug.xcconfig"; sourceTree = "<group>"; };
 		C4BDF82E9E60F036575B60FD /* Pods-TestesUnitariosTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestesUnitariosTests.release.xcconfig"; path = "Target Support Files/Pods-TestesUnitariosTests/Pods-TestesUnitariosTests.release.xcconfig"; sourceTree = "<group>"; };
 		F84FA7861ABE876AAA0722C9 /* Pods_TestesUnitarios.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TestesUnitarios.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -155,6 +161,9 @@
 				236F95E927B9960A00D952DE /* StringUtilsTests.swift */,
 				236F96CE27B9B0CF00D952DE /* BeforeEachAfterEach.swift */,
 				236F96D027B9B0EE00D952DE /* AccountViewModelSpecs.swift */,
+				236F96D227B9B2AA00D952DE /* AccountViewModelMock.swift */,
+				236F96D427B9B2F300D952DE /* AsyncProcessSpec.swift */,
+				236F96D627B9B30E00D952DE /* ProviderMock.swift */,
 			);
 			path = TestesUnitariosTests;
 			sourceTree = "<group>";
@@ -422,7 +431,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				236F96D327B9B2AA00D952DE /* AccountViewModelMock.swift in Sources */,
+				236F96D527B9B2F300D952DE /* AsyncProcessSpec.swift in Sources */,
 				236F95EA27B9960A00D952DE /* StringUtilsTests.swift in Sources */,
+				236F96D727B9B30E00D952DE /* ProviderMock.swift in Sources */,
 				236F96D127B9B0EE00D952DE /* AccountViewModelSpecs.swift in Sources */,
 				236F95BB27B9835400D952DE /* TestesUnitariosTests.swift in Sources */,
 				236F96CF27B9B0CF00D952DE /* BeforeEachAfterEach.swift in Sources */,

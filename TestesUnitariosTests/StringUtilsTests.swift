@@ -10,7 +10,7 @@ import Nimble
 @testable import TestesUnitarios
 
 class StringUtilsTests: QuickSpec {
-
+    
     override func spec() {
         describe("StringUtils") {
             context("Is Valid Email") {
@@ -48,5 +48,5 @@ class StringUtilsTests: QuickSpec {
             }
         }
     }
-
+    
 }

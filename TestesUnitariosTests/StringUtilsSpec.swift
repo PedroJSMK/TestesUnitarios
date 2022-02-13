@@ -9,7 +9,7 @@ import XCTest
 @testable import TestesUnitarios
 
 class StringUtilsSpec: XCTestCase {
-
+    
     func testIsValidEmail() {
         let email = "TesteUnitario"
         let value = email.isValidEmail()
@@ -32,5 +32,5 @@ class StringUtilsSpec: XCTestCase {
         XCTAssert(newText == "Dwift")
         XCTAssert(newText2 == "Dwifx")
     }
-
+    
 }

@@ -8,7 +8,7 @@
 import UIKit
 
 class AccountViewController: UIViewController {
-
+    
     @IBOutlet weak var instructionLabel: UILabel!
     var viewModel: AccountViewModelProtocol?
     

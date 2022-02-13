@@ -2,7 +2,7 @@
 //  AccountViewModelSpecs.swift
 //  TestesUnitariosTests
 //
-//  Created by Pedro Kanagusto on 13/02/22.
+//  Created by PJSMK on 13/02/22.
 //
 
 import Quick
@@ -36,13 +36,13 @@ class AccountViewModelSpecs: QuickSpec {
                     sut.shouldRequestLocation(
                         showAlert: {
                             showAlert = true
-                    },
+                        },
                         askUserPermission: {
                             askUserPermission = true
-                    },
+                        },
                         completion: {
                             completion = true
-                    })
+                        })
                     
                     expect(showAlert).to(equal(false))
                     expect(askUserPermission).to(equal(true))
@@ -51,17 +51,17 @@ class AccountViewModelSpecs: QuickSpec {
                 
                 it("Use Location False") {
                     sut = AccountViewModel(shouldUseLocation: false, model: AccountModel(instruction: ""))
-                            
+                    
                     sut.shouldRequestLocation(
                         showAlert: {
                             showAlert = true
-                    },
+                        },
                         askUserPermission: {
                             askUserPermission = true
-                    },
+                        },
                         completion: {
                             completion = true
-                    })
+                        })
                     
                     expect(showAlert).to(equal(true))
                     expect(askUserPermission).to(equal(false))
@@ -90,7 +90,25 @@ class AccountViewModelSpecs: QuickSpec {
                     sut = AccountViewModel(shouldUseLocation: false, model: AccountModel(instruction: "Olá mundo"))
                     expect(sut.instructionText).to(equal("Olá mundo"))
                 }
-            }     
+            }
+            
+            context("Get Joke") {
+                it("With error"){
+                    sut = AccountViewModel(shouldUseLocation: true,
+                                           model: AccountModel(instruction: "Olá mundo"),
+                                           provider: ProviderMock(status: .invalidResponse))
+                    sut.getJoke()
+                    expect(sut.status).to(equal("Erro"))
+                }
+                
+                it("Without error"){
+                    sut = AccountViewModel(shouldUseLocation: true,
+                                           model: AccountModel(instruction: "Olá mundo"),
+                                           provider: ProviderMock(status: .success))
+                    sut.getJoke()
+                    expect(sut.status).to(equal("animal"))
+                }
+            }
         }
     }
 }

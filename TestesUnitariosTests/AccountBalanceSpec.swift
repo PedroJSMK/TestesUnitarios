@@ -9,9 +9,9 @@ import XCTest
 @testable import TestesUnitarios
 
 class AccountBalanceSpec: XCTestCase {
-
+    
     var account: AccountBalance?
-        
+    
     func testGetSpecialBalance100() {
         account = AccountBalance(balance: 99)
         let specialBalance = account?.getSpecialLimit()
@@ -33,5 +33,5 @@ class AccountBalanceSpec: XCTestCase {
         
         XCTAssertEqual(specialBalance, 400, "O saldo menor que 500 e maior que 100, deve retornar o saldo")
     }
-
+    
 }
