@@ -18,10 +18,10 @@ class StringUtilsSpec: XCTestCase {
     }
     
     func testRemoveWhiteSpace() {
-        let text = "Olá Mundo"
+        let text = "Olá "
         let newText = text.removeWhitespace()
         
-        XCTAssert(newText == "OláMundo", "Não removeu os espaços")
+        XCTAssert(newText == "Olá", "Não removeu os espaços")
     }
     
     func testReplace() {
