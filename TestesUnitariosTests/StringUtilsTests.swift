@@ -15,19 +15,19 @@ class StringUtilsTests: QuickSpec {
         describe("StringUtils") {
             context("Is Valid Email") {
                 it("Valid Email") {
-                    let email = "curso@gmail.com"
+                    let email = "TesteUnitario@gmail.com"
                     let isValidEmail = email.isValidEmail()
                     expect(isValidEmail).to(beTrue())
                 }
                 
                 it("Invalid Email") {
-                    let email = "curso"
+                    let email = "TesteUnitario"
                     let isValidEmail = email.isValidEmail()
                     expect(isValidEmail).to(beFalsy())
                 }
                 
                 it("Invalid Email") {
-                    let email = "curso"
+                    let email = "TesteUnitario"
                     let isValidEmail = email.isValidEmail()
                     expect(isValidEmail) == false
                 }

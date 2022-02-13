@@ -11,7 +11,7 @@ import XCTest
 class StringUtilsSpec: XCTestCase {
 
     func testIsValidEmail() {
-        let email = "curso"
+        let email = "TesteUnitario"
         let value = email.isValidEmail()
         
         XCTAssertFalse(value, "Não é um email valido")

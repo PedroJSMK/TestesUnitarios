@@ -20,19 +20,16 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A5j-xq-1jg">
-                    <rect key="frame" x="20" y="563" width="374" height="20.5"/>
+                    <rect key="frame" x="20" y="401" width="374" height="20.5"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CZs-wG-EEd">
-                    <rect key="frame" x="175" y="660" width="70" height="40"/>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CZs-wG-EEd">
+                    <rect key="frame" x="183" y="555" width="70" height="40"/>
+                    <autoresizingMask key="autoresizingMask"/>
                     <color key="backgroundColor" systemColor="linkColor"/>
-                    <constraints>
-                        <constraint firstAttribute="width" constant="70" id="d7L-l8-Ekg"/>
-                        <constraint firstAttribute="height" constant="40" id="nTU-zX-eKI"/>
-                    </constraints>
                     <state key="normal" title="Login">
                         <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </state>

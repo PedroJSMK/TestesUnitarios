@@ -12,13 +12,13 @@ class AsyncProcess {
     
     func doStuff(_ completion: @escaping (String) -> ()) {
         DispatchQueue.global(qos: .background).asyncAfter(deadline: .now() + 0.1) { [weak self] in
-            completion("Curso")
+            completion("TesteUnitario")
         }
     }
     
     func callThatResultsInSideEffect() {
         DispatchQueue.global(qos: .background).asyncAfter(deadline: .now() + 0.1) { [weak self] in
-            self?.name = "Curso"
+            self?.name = "TesteUnitario"
         }
     }
 }
